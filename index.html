@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pankaj Banshraj Pal — Cybersecurity Engineer</title>
+  <meta name="description" content="Cybersecurity Engineer with 4+ years in SOC, VAPT, Threat Hunting, and Incident Response. Based in Navi Mumbai, India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Background Grid -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text" id="statusText">Secure Channel Active</span>
+        <button class="theme-btn" id="themeBtn" title="Toggle theme">
+          <i class="fas fa-terminal"></i>
+        </button>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-tags">
+        <span class="tag tag-green"><i class="fas fa-shield-halved"></i> Blue Team Specialist</span>
+        <span class="tag tag-outline"><i class="fas fa-location-dot"></i> Navi Mumbai, India</span>
+        <span class="tag tag-outline"><i class="fas fa-globe"></i> Remote Available</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-greeting">Hello, I'm Pankaj.</span>
+        <span class="hero-role">Cybersecurity <span class="accent-text">Engineer.</span></span>
+      </h1>
+
+      <p class="hero-desc">
+        4+ years in <strong>Blue Team SOC Operations</strong> and <strong>Red Team VAPT</strong>. Specializing in threat hunting, incident response, application security, and cloud security—turning vulnerabilities into hardened defenses.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-lock"></i> Secure Contact
+        </a>
+        <a href="#projects" class="btn btn-secondary">
+          <i class="fas fa-folder-open"></i> View Work
+        </a>
+        <button class="btn btn-ghost" id="copyEmailBtn">
+          <i class="fas fa-copy"></i> <span id="copyEmailText">Copy Email</span>
+        </button>
+      </div>
+
+      <!-- Terminal animation -->
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span class="t-dot t-red"></span>
+          <span class="t-dot t-yellow"></span>
+          <span class="t-dot t-green"></span>
+          <span class="terminal-title">threat-hunter@pankaj:~$</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+          <div class="terminal-line t-output">pankaj_banshraj_pal — cybersecurity_engineer</div>
+          <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat expertise.txt</span></div>
+          <div class="terminal-line t-output">SOC | VAPT | Threat Hunting | Incident Response | Cloud Security</div>
+          <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">ls certifications/</span></div>
+          <div class="terminal-line t-output">CTIA  CCSE(ongoing)  CrowdStrike-Falcon  Vuln-Mgmt</div>
+          <div class="terminal-line t-blink"><span class="t-prompt">$</span> <span class="cursor">▋</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATUS CARDS ========== -->
+  <section class="cards-section" id="cards">
+    <div class="container">
+      <div class="cards-grid">
+
+        <div class="card card-large card-available">
+          <div class="card-top-row">
+            <div class="card-icon-box"><i class="fas fa-shield-halved"></i></div>
+            <span class="card-status-dot"></span>
+          </div>
+          <div class="card-label">Open to Work</div>
+          <div class="card-sublabel">Available for Hire</div>
+          <div class="card-tags-row">
+            <span class="mini-tag">SOC</span>
+            <span class="mini-tag">VAPT</span>
+            <span class="mini-tag">Cloud Sec</span>
+          </div>
+        </div>
+
+        <div class="card card-link" onclick="window.open('https://www.linkedin.com/in/prithvikpal/','_blank')">
+          <div class="card-icon-box card-icon-blue"><i class="fab fa-linkedin-in"></i></div>
+          <div class="card-text">
+            <div class="card-label">LinkedIn</div>
+            <div class="card-sublabel">/in/prithvikpal</div>
+          </div>
+          <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+        </div>
+
+        <div class="card card-link" onclick="window.open('https://app.letsdefend.io/user/prithvikpal','_blank')">
+          <div class="card-icon-box card-icon-green"><i class="fas fa-bug"></i></div>
+          <div class="card-text">
+            <div class="card-label">LetsDefend</div>
+            <div class="card-sublabel">prithvikpal</div>
+          </div>
+          <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+        </div>
+
+        <div class="card card-link" onclick="window.open('https://sites.google.com/view/pankajpal','_blank')">
+          <div class="card-icon-box card-icon-amber"><i class="fas fa-globe"></i></div>
+          <div class="card-text">
+            <div class="card-label">Portfolio Site</div>
+            <div class="card-sublabel">sites.google.com</div>
+          </div>
+          <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+        </div>
+
+        <div class="card card-stat">
+          <div class="stat-number">4+</div>
+          <div class="card-label">Years in Cybersecurity</div>
+        </div>
+
+        <div class="card card-stat">
+          <div class="stat-number">190K+</div>
+          <div class="card-label">Security Findings Remediated</div>
+        </div>
+
+        <div class="card card-stat">
+          <div class="stat-number">500+</div>
+          <div class="card-label">Employees Security Trained</div>
+        </div>
+
+        <div class="card card-location">
+          <div class="card-icon-box card-icon-purple"><i class="fas fa-location-dot"></i></div>
+          <div class="card-text">
+            <div class="card-label">Navi Mumbai</div>
+            <div class="card-sublabel">India · Remote OK</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <span class="section-icon"><i class="fas fa-briefcase"></i></span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <span class="section-count">4 Roles</span>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Enterprise Security Engineer</h3>
+                <div class="exp-company">
+                  <span class="company-logo menlo-logo"><i class="fas fa-shield"></i></span>
+                  Menlo Security Inc.
+                  <span class="exp-location">Mountain View, CA · Remote</span>
+                </div>
+              </div>
+              <div class="exp-date">
+                <span class="date-badge active-badge">Jun 2024 – Present</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Browser Isolation</span>
+              <span class="exp-tag">SIEM</span>
+              <span class="exp-tag">EDR/XDR</span>
+              <span class="exp-tag">IAM</span>
+              <span class="exp-tag">DLP</span>
+              <span class="exp-tag">VPN</span>
+            </div>
+            <ul class="exp-list">
+              <li>Implemented Menlo's browser isolation technology to prevent web-based threats from reaching endpoints across the enterprise</li>
+              <li>Integrated security stack: Firewalls, SIEM, IDS/IPS, EDR — securing enterprise data at scale</li>
+              <li>Conducted security awareness training for <strong>500+ employees</strong>, improving organizational security posture</li>
+              <li>Managed enterprise solutions including VPN, DLP (Code42), and IAM (Okta, 1Password)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">IT Security Engineer</h3>
+                <div class="exp-company">
+                  <span class="company-logo protec-logo"><i class="fas fa-lock"></i></span>
+                  ProTechmanize Solutions Pvt Ltd
+                  <span class="exp-location">Thane, Maharashtra</span>
+                </div>
+              </div>
+              <div class="exp-date">
+                <span class="date-badge">Dec 2022 – Jun 2024</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">SOC 24/7</span>
+              <span class="exp-tag">VAPT</span>
+              <span class="exp-tag">Forensics</span>
+              <span class="exp-tag">SIEM</span>
+              <span class="exp-tag">Incident Response</span>
+            </div>
+            <ul class="exp-list">
+              <li>Operated in 24/7 SOC using SIEM for real-time monitoring and alert analysis across complex enterprise infrastructure</li>
+              <li>Investigated security alerts: phishing, malware infections, brute force attacks, and insider threats</li>
+              <li>Conducted forensic analysis to determine root causes and assess incident impact</li>
+              <li>Performed VAPT on web applications, mobile apps, APIs, and network infrastructure using Burp Suite, OWASP ZAP</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Data Security Engineer</h3>
+                <div class="exp-company">
+                  <span class="company-logo neuro-logo"><i class="fas fa-brain"></i></span>
+                  Neuroglia Health Private Limited
+                  <span class="exp-location">Bengaluru, Karnataka</span>
+                </div>
+              </div>
+              <div class="exp-date">
+                <span class="date-badge">Jul 2021 – Oct 2022</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">MDM</span>
+              <span class="exp-tag">SAST/DAST</span>
+              <span class="exp-tag">DRM Security</span>
+              <span class="exp-tag">AppSec</span>
+            </div>
+            <ul class="exp-list">
+              <li>Managed MDM tools to detect/block rooted devices and perform remote wipes on compromised mobile units</li>
+              <li>Discovered critical "Safe Mode" bypass on <strong>5,000 MDM-managed units</strong>, triggering full security reimplementation</li>
+              <li>Identified critical DRM bypass vulnerabilities twice — safeguarding ~15% of potential revenue loss</li>
+              <li>Remediated <strong>~190,000 SAST</strong>, <strong>1,620 DAST</strong>, and <strong>250 PT findings</strong> on live production applications</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Freelance Web Developer</h3>
+                <div class="exp-company">
+                  <span class="company-logo freelance-logo"><i class="fas fa-code"></i></span>
+                  Self-Employed
+                  <span class="exp-location">Remote</span>
+                </div>
+              </div>
+              <div class="exp-date">
+                <span class="date-badge">Jan 2017 – Mar 2021</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Web Dev</span>
+              <span class="exp-tag">Secure Coding</span>
+              <span class="exp-tag">UI/UX</span>
+            </div>
+            <ul class="exp-list">
+              <li>Developed responsive websites with focus on UI/UX and security best practices</li>
+              <li>Collaborated with clients to deliver efficient, secure, and maintainable solutions</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <span class="section-icon"><i class="fas fa-folder-open"></i></span>
+          <h2 class="section-title">Security Projects</h2>
+        </div>
+        <span class="section-count">Featured Work</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="background: rgba(0,255,100,0.08); border-color: rgba(0,255,100,0.2);">
+              <i class="fas fa-terminal" style="color: #00ff64;"></i>
+            </div>
+            <span class="project-badge">Personal Tool</span>
+          </div>
+          <h3 class="project-title">Contra</h3>
+          <p class="project-desc">A Java-based HTTP analysis tool for security testing — enables manual modification of HTTP requests, automated attack execution to find security flaws, data encoding/decoding, request/response comparison, and complete traffic logging.</p>
+          <div class="project-tags">
+            <span class="ptag">Java</span>
+            <span class="ptag">HTTP Proxy</span>
+            <span class="ptag">Security Testing</span>
+            <span class="ptag">VAPT</span>
+          </div>
+          <div class="project-metrics">
+            <span><i class="fas fa-check-circle"></i> Automated Attack Detection</span>
+            <span><i class="fas fa-check-circle"></i> Traffic Logging</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="background: rgba(100,130,255,0.08); border-color: rgba(100,130,255,0.2);">
+              <i class="fas fa-calculator" style="color: #6482ff;"></i>
+            </div>
+            <span class="project-badge">Personal Tool</span>
+          </div>
+          <h3 class="project-title">SRini</h3>
+          <p class="project-desc">Python-based mathematical utility tool supporting complex matrix operations including addition, subtraction, multiplication, division, diagonal, symmetric, and transpose computations. Built for engineering and security calculations.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Matrix Ops</span>
+            <span class="ptag">Engineering</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="background: rgba(255,160,0,0.08); border-color: rgba(255,160,0,0.2);">
+              <i class="fas fa-cloud" style="color: #ffa000;"></i>
+            </div>
+            <span class="project-badge">Enterprise</span>
+          </div>
+          <h3 class="project-title">AWS → GCP Migration Security</h3>
+          <p class="project-desc">Led security architecture and implementation for a cloud migration from AWS to GCP. Deployed Uptycs for unified cloud, container, and endpoint security visibility across the migrated infrastructure.</p>
+          <div class="project-tags">
+            <span class="ptag">AWS</span>
+            <span class="ptag">GCP</span>
+            <span class="ptag">Uptycs</span>
+            <span class="ptag">Cloud Security</span>
+          </div>
+          <div class="project-metrics">
+            <span><i class="fas fa-check-circle"></i> Unified Security Visibility</span>
+            <span><i class="fas fa-check-circle"></i> Aug 2024</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="background: rgba(255,60,60,0.08); border-color: rgba(255,60,60,0.2);">
+              <i class="fas fa-magnifying-glass" style="color: #ff3c3c;"></i>
+            </div>
+            <span class="project-badge">Threat Intel</span>
+          </div>
+          <h3 class="project-title">CCleaner S3 Threat Detection</h3>
+          <p class="project-desc">Identified unauthorized CCleaner traffic communicating to an Amazon S3 bucket during off-hours — a classic supply chain / data exfiltration indicator. Mitigated the threat before any data loss occurred.</p>
+          <div class="project-tags">
+            <span class="ptag">Threat Hunting</span>
+            <span class="ptag">SIEM</span>
+            <span class="ptag">AWS S3</span>
+            <span class="ptag">Supply Chain</span>
+          </div>
+          <div class="project-metrics">
+            <span><i class="fas fa-check-circle"></i> Data Exfiltration Prevented</span>
+            <span><i class="fas fa-check-circle"></i> May 2023</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="background: rgba(0,220,255,0.08); border-color: rgba(0,220,255,0.2);">
+              <i class="fas fa-mobile-screen-button" style="color: #00dcff;"></i>
+            </div>
+            <span class="project-badge">Mobile Security</span>
+          </div>
+          <h3 class="project-title">MDM Safe Mode Bypass</h3>
+          <p class="project-desc">Discovered a critical "Safe Mode" bypass vulnerability on 5,000 MDM-managed mobile units. The finding triggered a full security reimplementation and significantly improved device security posture company-wide.</p>
+          <div class="project-tags">
+            <span class="ptag">MDM</span>
+            <span class="ptag">Mobile Security</span>
+            <span class="ptag">Vulnerability Research</span>
+          </div>
+          <div class="project-metrics">
+            <span><i class="fas fa-check-circle"></i> 5,000 Units Secured</span>
+            <span><i class="fas fa-check-circle"></i> Nov 2021</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="background: rgba(180,0,255,0.08); border-color: rgba(180,0,255,0.2);">
+              <i class="fas fa-video" style="color: #b400ff;"></i>
+            </div>
+            <span class="project-badge">DRM Research</span>
+          </div>
+          <h3 class="project-title">DRM Bypass Discovery (×2)</h3>
+          <p class="project-desc">Identified critical Digital Rights Management (DRM) bypass vulnerabilities twice, preventing unauthorized access to premium video content and safeguarding an estimated 15% of annual company revenue from potential piracy losses.</p>
+          <div class="project-tags">
+            <span class="ptag">DRM Security</span>
+            <span class="ptag">Vulnerability Research</span>
+            <span class="ptag">Revenue Protection</span>
+          </div>
+          <div class="project-metrics">
+            <span><i class="fas fa-check-circle"></i> ~15% Revenue Protected</span>
+            <span><i class="fas fa-check-circle"></i> Jul 2022</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BUG BOUNTY SECTION ========== -->
+  <section class="section" id="bugbounty">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <span class="section-icon"><i class="fas fa-bug"></i></span>
+          <h2 class="section-title">Bug Hunting</h2>
+        </div>
+        <span class="section-count">In-House Research</span>
+      </div>
+
+      <div class="bounty-wrapper">
+        <div class="bounty-intro">
+          <p>Conducted in-house vulnerability research on major Indian platforms, identifying security flaws across e-commerce, automotive, and consumer services sectors.</p>
+        </div>
+
+        <div class="bounty-grid">
+          <div class="bounty-category">
+            <div class="bounty-cat-label"><i class="fas fa-shopping-bag"></i> E-Commerce & Retail</div>
+            <div class="bounty-tags">
+              <span class="bounty-tag">Myntra.com</span>
+              <span class="bounty-tag">Craftsvilla.com</span>
+              <span class="bounty-tag">Limeroad.com</span>
+              <span class="bounty-tag">Shopclues.com</span>
+              <span class="bounty-tag">Nearbuy.com</span>
+              <span class="bounty-tag">Twentydresses.com</span>
+              <span class="bounty-tag">Diamondmela.com</span>
+              <span class="bounty-tag">PNGadgil.com</span>
+            </div>
+          </div>
+
+          <div class="bounty-category">
+            <div class="bounty-cat-label"><i class="fas fa-car"></i> Automotive</div>
+            <div class="bounty-tags">
+              <span class="bounty-tag">MRFtyresandservice.com</span>
+              <span class="bounty-tag">Carwale.com</span>
+              <span class="bounty-tag">Gaadi.com</span>
+              <span class="bounty-tag">Cardekho.com</span>
+              <span class="bounty-tag">Droom.in</span>
+            </div>
+          </div>
+
+          <div class="bounty-category">
+            <div class="bounty-cat-label"><i class="fas fa-layer-group"></i> Other Services</div>
+            <div class="bounty-tags">
+              <span class="bounty-tag">Hike.in</span>
+              <span class="bounty-tag">Doorkeys.com</span>
+              <span class="bounty-tag">Scootsy.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bounty-stats-row">
+          <div class="bounty-stat">
+            <span class="bstat-num">15+</span>
+            <span class="bstat-label">Platforms Researched</span>
+          </div>
+          <div class="bounty-stat">
+            <span class="bstat-num">3</span>
+            <span class="bstat-label">Industry Sectors</span>
+          </div>
+          <div class="bounty-stat">
+            <span class="bstat-num">Multiple</span>
+            <span class="bstat-label">Critical Findings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <span class="section-icon"><i class="fas fa-microchip"></i></span>
+          <h2 class="section-title">Skills & Tools</h2>
+        </div>
+        <span class="section-count">Technical Arsenal</span>
+      </div>
+
+      <div class="skills-layout">
+
+        <div class="skills-col">
+          <h3 class="skills-group-title"><i class="fas fa-shield-halved"></i> Blue Team</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Threat Hunting</span><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Incident Response</span><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SIEM Operations</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Forensic Analysis</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Log Analysis</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skills-col">
+          <h3 class="skills-group-title"><i class="fas fa-crosshairs"></i> Red Team</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Web App VAPT</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Mobile Security</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">API Security</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Network VAPT</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SAST / DAST</span><div class="skill-bar"><div class="skill-fill" data-width="87"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skills-col">
+          <h3 class="skills-group-title"><i class="fas fa-cloud"></i> Cloud & Platforms</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span class="skill-name">GCP</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">CrowdStrike</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Zscaler</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Uptycs</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tools Grid -->
+      <div class="tools-section">
+        <h3 class="tools-title">Security Toolbox</h3>
+        <div class="tools-grid">
+          <div class="tool-pill"><i class="fas fa-spider"></i> Burp Suite</div>
+          <div class="tool-pill"><i class="fas fa-shield"></i> OWASP ZAP</div>
+          <div class="tool-pill"><i class="fas fa-crow"></i> CrowdStrike</div>
+          <div class="tool-pill"><i class="fas fa-eye"></i> Uptycs</div>
+          <div class="tool-pill"><i class="fas fa-cloud"></i> Zscaler</div>
+          <div class="tool-pill"><i class="fas fa-envelope-open-text"></i> Proofpoint</div>
+          <div class="tool-pill"><i class="fas fa-key"></i> Okta</div>
+          <div class="tool-pill"><i class="fas fa-lock"></i> 1Password</div>
+          <div class="tool-pill"><i class="fas fa-chart-line"></i> Grafana</div>
+          <div class="tool-pill"><i class="fas fa-satellite-dish"></i> CybelAngel</div>
+          <div class="tool-pill"><i class="fas fa-database"></i> Code42</div>
+          <div class="tool-pill"><i class="fab fa-python"></i> Python</div>
+          <div class="tool-pill"><i class="fab fa-java"></i> Java</div>
+          <div class="tool-pill"><i class="fas fa-terminal"></i> Bash/PowerShell</div>
+          <div class="tool-pill"><i class="fab fa-linux"></i> Linux</div>
+          <div class="tool-pill"><i class="fab fa-aws"></i> AWS</div>
+        </div>
+      </div>
+
+      <!-- Programming -->
+      <div class="lang-section">
+        <h3 class="tools-title">Languages</h3>
+        <div class="lang-row">
+          <div class="lang-chip"><span class="lang-dot" style="background:#3776ab"></span>Python</div>
+          <div class="lang-chip"><span class="lang-dot" style="background:#f89820"></span>Java</div>
+          <div class="lang-chip"><span class="lang-dot" style="background:#4eaa25"></span>Bash</div>
+          <div class="lang-chip"><span class="lang-dot" style="background:#012456"></span>PowerShell</div>
+          <div class="lang-chip"><span class="lang-dot" style="background:#f7df1e"></span>JavaScript</div>
+          <div class="lang-chip"><span class="lang-dot" style="background:#8892be"></span>PHP</div>
+          <div class="lang-chip"><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS SECTION ========== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <span class="section-icon"><i class="fas fa-certificate"></i></span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+        <span class="section-count">Credentials</span>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-logo" style="background: rgba(0,160,235,0.1); border-color: rgba(0,160,235,0.3);">
+            <span style="color: #00a0eb; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 14px;">EC</span>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Certified Threat Intelligence Analyst</div>
+            <div class="cert-issuer">EC-Council (CTIA)</div>
+            <div class="cert-date">Aug 2023 – Aug 2026</div>
+          </div>
+          <span class="cert-status active">Active</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-logo" style="background: rgba(0,160,235,0.1); border-color: rgba(0,160,235,0.3);">
+            <span style="color: #00a0eb; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 14px;">EC</span>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Certified Cloud Security Engineer</div>
+            <div class="cert-issuer">EC-Council (CCSE)</div>
+            <div class="cert-date">In Progress</div>
+          </div>
+          <span class="cert-status ongoing">In Progress</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-logo" style="background: rgba(255,0,0,0.08); border-color: rgba(255,50,50,0.25);">
+            <span style="color: #ff3232; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 12px;">CS</span>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Vulnerability Management Fundamentals</div>
+            <div class="cert-issuer">CrowdStrike</div>
+            <div class="cert-date">Valid until Mar 2025</div>
+          </div>
+          <span class="cert-status active">Active</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-logo" style="background: rgba(255,0,0,0.08); border-color: rgba(255,50,50,0.25);">
+            <span style="color: #ff3232; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 12px;">CS</span>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Falcon Forensics Fundamentals</div>
+            <div class="cert-issuer">CrowdStrike</div>
+            <div class="cert-date">Valid until Apr 2025</div>
+          </div>
+          <span class="cert-status active">Active</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <span class="section-icon"><i class="fas fa-user-secret"></i></span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text">
+          <p class="about-p">I'm a <strong>Cybersecurity Engineer</strong> with over 4 years of hands-on experience spanning both <span class="highlight-text">Blue Team SOC operations</span> and <span class="highlight-text">Red Team VAPT activities</span>. My expertise covers the full security lifecycle — from proactive threat hunting and alert triage to forensic investigation and vulnerability remediation.</p>
+
+          <p class="about-p">Currently at <strong>Menlo Security Inc.</strong>, I focus on enterprise browser isolation technology, security architecture, and scaling security programs across global teams. I believe in treating security not as a checkbox but as a continuous engineering discipline.</p>
+
+          <p class="about-p">I hold a <strong>Bachelor of Computer Science</strong> from Mumbai University and am a <strong>Certified Threat Intelligence Analyst (CTIA)</strong>. When I'm not defending systems, I'm researching new attack patterns, developing security tools, and contributing to the security community.</p>
+
+          <div class="about-metrics">
+            <div class="about-metric">
+              <span class="am-val">190K+</span>
+              <span class="am-label">Findings Remediated</span>
+            </div>
+            <div class="about-metric">
+              <span class="am-val">5K+</span>
+              <span class="am-label">Devices Secured</span>
+            </div>
+            <div class="about-metric">
+              <span class="am-val">500+</span>
+              <span class="am-label">Employees Trained</span>
+            </div>
+            <div class="about-metric">
+              <span class="am-val">15+</span>
+              <span class="am-label">Platforms Researched</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="education-card">
+            <h4 class="edu-title"><i class="fas fa-graduation-cap"></i> Education</h4>
+            <div class="edu-item">
+              <div class="edu-degree">Bachelor of Computer Science</div>
+              <div class="edu-school">Mumbai University</div>
+              <div class="edu-year">2021</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-degree">Intermediate (HSC)</div>
+              <div class="edu-school">Mumbai University</div>
+              <div class="edu-year">2014</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-degree">Matriculation (SSC)</div>
+              <div class="edu-school">Mumbai University</div>
+              <div class="edu-year">2012</div>
+            </div>
+          </div>
+
+          <div class="compliance-card">
+            <h4 class="edu-title"><i class="fas fa-file-shield"></i> Compliance Familiarity</h4>
+            <div class="comp-tags">
+              <span class="comp-tag">GDPR</span>
+              <span class="comp-tag">HIPAA</span>
+              <span class="comp-tag">ISO 27001</span>
+              <span class="comp-tag">OWASP ASVS</span>
+              <span class="comp-tag">Zero Trust</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-row">
+          <span class="section-icon"><i class="fas fa-satellite-dish"></i></span>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-left">
+          <p class="contact-desc">Looking to strengthen your security posture? Let's connect. Whether it's a full-time role, consulting engagement, or security review — I'm open to meaningful opportunities.</p>
+
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:prithvikpal@gmail.com">
+              <div class="cl-icon"><i class="fas fa-envelope"></i></div>
+              <div class="cl-info">
+                <div class="cl-label">Email</div>
+                <div class="cl-value">prithvikpal@gmail.com</div>
+              </div>
+              <i class="fas fa-arrow-up-right-from-square cl-arrow"></i>
+            </a>
+
+            <a class="contact-link" href="tel:+917977774046">
+              <div class="cl-icon"><i class="fas fa-phone"></i></div>
+              <div class="cl-info">
+                <div class="cl-label">Phone</div>
+                <div class="cl-value">+91-7977774046</div>
+              </div>
+              <i class="fas fa-arrow-up-right-from-square cl-arrow"></i>
+            </a>
+
+            <a class="contact-link" href="https://www.linkedin.com/in/prithvikpal/" target="_blank">
+              <div class="cl-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="cl-info">
+                <div class="cl-label">LinkedIn</div>
+                <div class="cl-value">/in/prithvikpal</div>
+              </div>
+              <i class="fas fa-arrow-up-right-from-square cl-arrow"></i>
+            </a>
+
+            <a class="contact-link" href="https://app.letsdefend.io/user/prithvikpal" target="_blank">
+              <div class="cl-icon"><i class="fas fa-shield-halved"></i></div>
+              <div class="cl-info">
+                <div class="cl-label">LetsDefend</div>
+                <div class="cl-value">prithvikpal</div>
+              </div>
+              <i class="fas fa-arrow-up-right-from-square cl-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="contact-form-card">
+            <h3 class="form-title"><i class="fas fa-paper-plane"></i> Send a Message</h3>
+            <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-input" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" placeholder="john@company.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-input" placeholder="Security Consultation" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-input form-textarea" placeholder="Tell me about your security needs..." rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+            <div class="form-success" id="formSuccess" style="display:none;">
+              <i class="fas fa-check-circle"></i>
+              <p>Message prepared! Please use your email client to send it to <strong>prithvikpal@gmail.com</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">PBP<span class="accent">.</span></div>
+          <p class="footer-tagline">Cybersecurity Engineer · Threat Hunter · Bug Hunter</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.linkedin.com/in/prithvikpal/" target="_blank" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://app.letsdefend.io/user/prithvikpal" target="_blank" class="footer-social"><i class="fas fa-shield-halved"></i></a>
+          <a href="mailto:prithvikpal@gmail.com" class="footer-social"><i class="fas fa-envelope"></i></a>
+          <a href="https://sites.google.com/view/pankajpal" target="_blank" class="footer-social"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Pankaj Banshraj Pal. All rights reserved.</span>
+        <span class="footer-loc"><i class="fas fa-location-dot"></i> Navi Mumbai, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
